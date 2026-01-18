@@ -1,4 +1,4 @@
-# 🚀 AliveV2: The Concurrent Recon & Research Validator
+# 🚀 Alive: The Concurrent Recon & Research Validator
 
 **AliveV2** is a high-speed, OSINT-enhanced URL health checker built for security professionals and academic researchers. It streamlines the process of validating large sets of assets while providing intelligent alternatives for broken resources through DuckDuckGo integration.
 
