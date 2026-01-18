@@ -38,8 +38,8 @@ Beyond security, I utilize AliveV2 as a "Reference Auditor" to maintain the qual
 ### 1. Installation
 ```bash
 # Clone the repository
-git clone [https://github.com/YourUsername/AliveV2.git](https://github.com/YourUsername/AliveV2.git)
-cd AliveV2
+git clone https://github.com/arazazi/Alive.git
+cd Alive
 
 # Install dependencies
 pip install -r requirements.txt
@@ -48,10 +48,10 @@ pip install -r requirements.txt
 
 ### 2. Basic Usage
 
-Check a few URLs directly with verbose output:
+Check a few URLs directly with verbose output and suggest:
 
 ```bash
-python aliveV2.py [https://example.com](https://example.com) [https://google.com](https://google.com) -v
+python3 alive -s "https://blog.talosintelligence.com/2024-threat-report/" -v
 
 ```
 
@@ -60,7 +60,7 @@ python aliveV2.py [https://example.com](https://example.com) [https://google.com
 Check a file of URLs (e.g., a bibliography or a list of subdomains) with OSINT suggestions:
 
 ```bash
-python aliveV2.py -f targets.txt --suggest --output report.txt
+python alive.py -f targets.txt --suggest --output report.txt
 
 ```
 
@@ -69,7 +69,7 @@ python aliveV2.py -f targets.txt --suggest --output report.txt
 Pipe input from other tools and output clean JSON for further analysis:
 
 ```bash
-cat targets.json | python aliveV2.py -j > results.json
+cat targets.json | python alive.py -j > results.json
 
 ```
 
